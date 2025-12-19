@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CultureQuest - Explore the World with Leo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Meta tags for SEO -->
+    <meta name="description"
+        content="Explore different world cultures with your virtual guide Leo. A journey through Japan, Egypt, Brazil, and Morocco.">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">CultureQuest</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Discover the World's Wonders</h1>
+            <p>Join Leo on a virtual journey to explore diverse cultures, ancient history, and vibrant traditions.</p>
+            <button id="start-btn" class="cta-btn">Start Exploring</button>
+        </div>
+        <div class="hero-visuals">
+            <div class="guide-container">
+                <div class="speech-bubble" id="guide-speech">Hi! I'm Leo, your guide. Ready to travel?</div>
+                <img src="assets/guide_leo.png" alt="Leo the Guide" class="guide-img floating">
+            </div>
+        </div>
+        <!-- Background Overlay -->
+        <div class="hero-bg-overlay"></div>
+    </header>
+
+    <!-- Main Content: Culture Grid -->
+    <main class="container" id="explore">
+        <h2 class="section-title">Select a Destination</h2>
+        <div class="culture-grid" id="culture-grid">
+            <!-- Cards will be injected by JS -->
+        </div>
+    </main>
+
+    <!-- Modal for Details -->
+    <div id="culture-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="Culture Image">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title">Culture Name</h2>
+                    <p class="greeting" id="modal-greeting">Greeting</p>
+                    <p class="description" id="modal-desc">Description goes here...</p>
+                    <div class="fun-fact-box">
+                        <h3>Fun Fact</h3>
+                        <p id="modal-fact">Did you know...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CultureQuest. Made by <strong>Yassmin Bahloul</strong>. Built with ❤️ for explorers.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
